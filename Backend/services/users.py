@@ -14,7 +14,7 @@ def createUser(user):
         newUser = supabase.table("public.users").insert({"id":user["sub"], "email":user.get("email")}).execute()
 
     except:
-         raise AppException("Error while creation",402)
+         raise AppException("Error while creation",500)
     
     return newUser.data[0]
 
@@ -35,7 +35,7 @@ def updateUser(id,userData):
         user  = supabase.table("public.users").update(userData).eq("id",id).execute()
 
     except:
-         raise AppException(f"Error During user update",401)
+         raise AppException(f"Error During user update",500)
 
     if not user.data :
         raise AppException(f"User doesn't exist",404)
