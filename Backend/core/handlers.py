@@ -1,5 +1,5 @@
 from fastapi.responses import JSONResponse
-from core import AppException
+from core.AppException import AppException
 
 
 def register_exception_handler(app):   
