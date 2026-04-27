@@ -1,0 +1,88 @@
+# ======================
+# OS files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Environment variables
+# ======================
+.env
+.env.*
+!.env.example
+
+# ======================
+# Python
+# ======================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+*.sqlite3
+
+# FastAPI / backend logs
+*.log
+
+# ======================
+# Node / React Native / Expo
+# ======================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.expo/
+dist/
+build/
+web-build/
+
+# React Native
+android/.gradle/
+android/app/build/
+ios/Pods/
+ios/build/
+
+# ======================
+# TypeScript
+# ======================
+*.tsbuildinfo
+
+# ======================
+# IDEs
+# ======================
+.vscode/
+.idea/
+*.swp
+
+# ======================
+# Testing / coverage
+# ======================
+coverage/
+.pytest_cache/
+jest-cache/
+
+# ======================
+# ML / Data files (optional but common)
+# ======================
+*.pkl
+*.h5
+*.model
+*.joblib
+data/
+datasets/
+
+# ======================
+# Logs & temp
+# ======================
+logs/
+tmp/
+temp/
+
+# ======================
+# Docker (optional)
+# ======================
+.docker/
+docker-compose.override.yml
