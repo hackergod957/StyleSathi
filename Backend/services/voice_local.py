@@ -1,4 +1,4 @@
-from services.base import BaseVoiceService
+from Backend.services.baseVoice import BaseVoiceService
 import numpy as np
 from  faster_whisper import WhisperModel
 

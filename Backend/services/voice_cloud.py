@@ -1,4 +1,4 @@
-from services.base import BaseVoiceService
+from Backend.services.baseVoice import BaseVoiceService
 from openai import OpenAI
 import numpy as np
 import io

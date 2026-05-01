@@ -17,7 +17,7 @@ supabase : Client = create_client(SUPABASE_PROJECT_URL,SUPABASE_API_KEY)
 def get_jwks():
     now = time.time()
     if jwks_cache["keys"] is None or now - jwks_cache["time"] > 3600:
-        resp = requests.get(JWKS_URL, timeout=5)
+        resp = requests.get(JWKS_URL,headers={"apikey" : SUPABASE_API_KEY}, timeout=5)
         resp.raise_for_status()
         data = resp.json()
         if "keys" not in data or not data["keys"]:
