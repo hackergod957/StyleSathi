@@ -1,8 +1,4 @@
-import os
-from dotenv import load_dotenv
-from supabase import create_client , Client
 from core.AppException import AppException
-load_dotenv()
 
 
 
